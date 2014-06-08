@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body,select {
+	color: #FFF;
+	font-family: Roboto, sans-serif;
+	font-size: 15pt;
+	font-weight: 300 !important;
+	letter-spacing: -.025em;
+	line-height: 1.75em;
+}
+
+body {
+	background-color: #348cb2;
+}
+
+a {
+	-moz-transition: border-color .2s ease-in-out;
+	-webkit-transition: border-color .2s ease-in-out;
+	-o-transition: border-color .2s ease-in-out;
+	-ms-transition: border-color .2s ease-in-out;
+	transition: border-color .2s ease-in-out;
+	border-bottom: dotted 1px;
+	color: inherit;
+	outline: 0;
+	text-decoration: none;
+}
+
+a:hover {
+	border-color: transparent;
+}
+
+#main {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+header {
+	cursor: default;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 90%;
+}
+
+header h1 {
+	font-size: 4.5em;
+	font-weight: 900;
+	letter-spacing: -.035em;
+	margin-bottom: 0;
+	opacity: 0; /* disable on noscript */
+}
+
+@media only screen and (max-width: 480px) {
+	header h1 {
+		font-size: 2.5em; /* 4.5 / 1.8 */
+		letter-spacing: -.035em;
+	}
+}
+
+header nav {
+	font-size: 1.25em;
+	opacity: 0.75;
+	padding: 15px;
+	opacity: 0; /* disable on noscript */
+}
+
+@media only screen and (max-width: 480px) {
+	header nav {
+		font-size: 0.694444444em;
+		letter-spacing: -.035em;
+	}
+}
+
+ul li {
+	display: inline;
+}
+
+ul li.current {
+	font-weight: 900;
+}
+
+li+li::before {
+	content: " • ";
+	font-weight: normal;
+}
+
+input,textarea {
+	font-family: Roboto, sans-serif;
+	color: #6a707c; padding : 5px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border: solid 1px #348cb2;
+	font-size: 15pt;
+	font-weight: 300 !important;
+	letter-spacing: -.025em;
+	line-height: 1.75em;
+	width: 80%;
+	padding: 5px;
+}
+
+textarea:focus,input:focus {
+	outline: 0;
+}
+
+.button {
+	display: inline-block;
+	font-family: Roboto, sans-serif;
+	transition: background-color 0.5s ease;
+	background-color: white;
+	height: 2.75em;
+	line-height: 2.7em;
+	padding: 0 5px 0 5px;
+	-moz-border-radius: 8px; border-radius : 8px;
+	text-decoration: none;
+	font-weight: 300 !important;
+	color: #348cb2;
+	border: solid 1px #348cb2;
+	border-radius: 8px;
+}
+
+.button:hover {
+	background-color: rgba(52, 140, 178, 0.25);
+}
+
+.button.form {
+	width: 81.5%;
+}
+
+article {
+	background-color: white;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	color: #6a707c;
+	overflow-y: auto;
+	overflow-x: hidden;
+	opacity: 0; /* disable on noscript */
+}
+
+#footer {
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	bottom: 0;
+	cursor: default;
+	height: 2em;
+	left: 0;
+	line-height: 2em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5) 75%);
+	opacity: 0; /* disable on noscript */
+}
