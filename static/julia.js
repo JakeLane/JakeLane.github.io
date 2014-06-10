@@ -49,27 +49,32 @@ function DrawMandelbrot() {
 					imgData.data[dataPointer + 3] = 255;
 				} else {
 					// is outside mandelbrot, color dependent on iterations
-					imgData.data[dataPointer + 0] = (iterations * 5) % 255;
+					imgData.data[dataPointer + 0] = iterations % 255;
 					imgData.data[dataPointer + 1] = iterations % 255;
-					imgData.data[dataPointer + 2] = iterations % 255;
+					imgData.data[dataPointer + 2] = (iterations * 5) % 255;
 					imgData.data[dataPointer + 3] = iterations * 30;
 				}
 			}
 		}
 		ctx.putImageData(imgData, 0, 0);
 		var imageDataURL = canvas.toDataURL();
-		document.body.style.background = "transparent url('" + imageDataURL + "') repeat";
+		changeFavicon(imageDataURL);
+		// document.body.style.background = "transparent url('" + imageDataURL +
+		// "') repeat";
 	}
 }
 
-var randomStreamReal = new Math.seedrandom(usersIp);
-var randomStreamImaginary = new Math.seedrandom(usersIp.split("").reverse().join(""));
+try {
+	var randomStreamReal = new Math.seedrandom(usersIp);
+	var randomStreamImaginary = new Math.seedrandom(usersIp.split("").reverse().join(""));
 
-var realFix = ((randomStreamReal() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
-var imagFix = ((randomStreamImaginary() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
-
-// var realFix = -0.65175;
-// var imagFix = 0.41850;
+	var realFix = ((randomStreamReal() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
+	var imagFix = ((randomStreamImaginary() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
+}
+catch(error) {
+	var realFix = -0.65175;
+	var imagFix = 0.41850;
+}
 
 function IsJuliaMenge(real, imag) {
 	var temp = 0.0;
@@ -89,4 +94,17 @@ function IsJuliaMenge(real, imag) {
 
 	// this point is in mandelbrot
 	return -1;
+}
+
+document.head = document.head || document.getElementsByTagName('head')[0];
+
+function changeFavicon(src) {
+	var link = document.createElement('link'), oldLink = document.getElementById('dynamic-favicon');
+	link.id = 'dynamic-favicon';
+	link.rel = 'shortcut icon';
+	link.href = src;
+	if (oldLink) {
+		document.head.removeChild(oldLink);
+	}
+	document.head.appendChild(link);
 }

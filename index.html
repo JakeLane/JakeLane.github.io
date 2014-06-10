@@ -4,56 +4,110 @@
 <meta charset=utf-8>
 <title>Jake Lane</title>
 <link rel="stylesheet" href="static/style.css" />
+<noscript>
+	<link rel="stylesheet" href="static/style-noscript.css" />
+</noscript>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="main">
-			<!-- Header -->
-			<header>
-				<h1>Jake Lane</h1>
-				<nav>
-					<ul class='tabs-menu'>
-						<li class="current"><a href='#home'>Home</a></li>
-						<li><a href='#about'>About</a></li>
-						<li><a href='#contact'>Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-			<article>
-				<section id="home">Home.</section>
-				<section id="about" style="display: none;">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis hoc dicit? At enim hic etiam dolore. Et nemo nimium beatus est; Cur iustitia laudatur? Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Quia nec honesto quic quam honestius nec turpi turpius. Duo Reges: constructio interrete. Quod iam a me expectare noli.</p>
-
-					<p>Non ego tecum iam ita iocabor, ut isdem his de rebus, cum L. Aufert enim sensus actionemque tollit omnem. Mihi, inquam, qui te id ipsum rogavi? Ergo, si semel tristior effectus est, hilara vita amissa est? Quid, si etiam iucunda memoria est praeteritorum malorum? Omnia peccata paria dicitis. Eadem nunc mea adversum te oratio est. Nihil enim iam habes, quod ad corpus referas;</p>
-
-					<p>Nulla erit controversia. Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Multoque hoc melius nos veriusque quam Stoici. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Etenim semper illud extra est, quod arte comprehenditur. Vestri haec verecundius, illi fortasse constantius.</p>
-
-					<p>Sed quid sentiat, non videtis. Ut enim consuetudo loquitur, id solum dicitur honestum, quod est populari fama gloriosum. Igitur neque stultorum quisquam beatus neque sapientium non beatus. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis vitia posuisse contraria. Iam contemni non poteris. Illi enim inter se dissentiunt. An eiusdem modi? A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas.</p>
-
-					<p>Sed haec quidem liberius ab eo dicuntur et saepius. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam. Neque solum ea communia, verum etiam paria esse dixerunt. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Beatus autem esse in maximarum rerum timore nemo potest. Memini vero, inquam; Facile est hoc cernere in primis puerorum aetatulis. Eadem nunc mea adversum te oratio est.</p>
-
-				</section>
-				<section id="contact" style="display: none;">
-					<form action="http://getsimpleform.com/messages?form_api_token=c378aa41d2403d10da0b42ef5ca0b3d7" method="post">
-						<p><input type="hidden" name="redirect_to" value="jakelane.me" /></p>
-						<p><input type="text" id="name" name="Name" placeholder="Name" required></p>
-						<p><input type="email" id="email" name="Email" placeholder="Email" required></p>
-						<p><input type="text" id="subject" name="Subject" placeholder="Subject"></p>
-						<p><textarea id="message" name="Message" placeholder="Message" required></textarea><p>
-						<p><input type='submit' value='Submit' class="button form" /></p>
-					</form>
-				</section>
-			</article>
-			<!-- Footer -->
-			<footer id="footer">
-				<span class="copyright">&copy; Jake Lane</span>
-			</footer>
+	<div id="main">
+		<!-- Header -->
+		<header>
+			<h1>Jake Lane</h1>
+			<nav>
+				<ul class='tabs-menu'>
+					<li class="current"><a href='#home'>Home</a></li>
+					<li><a href='#about'>About</a></li>
+					<li><a href='#portfolio'>Portfolio</a></li>
+					<li><a href='#contact'>Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+		<article>
+			<section id="home">
+				<p>
+					<canvas id="juliaset" width="250" height="250"></canvas>
+				</p>
+				<p>My name is Jake Lane, I'm a high school student in South Australia. I've been hooked on computers since I could swing a keyboard and am currently studying in preparation for a degree in software engineering.</p>
+			</section>
+			<section id="about">
+				<p>I have various skills in computing such as:</p>
+				<ul>
+					<li>Various web development skills including <a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>, <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, <a href="http://en.wikipedia.org/wiki/XML">XML</a>, <a href="http://en.wikipedia.org/wiki/JSON">JSON</a>, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3">CSS3</a>, <a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> and <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.
+					</li>
+					<li>Various programming skills including <a href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> (experience with <a href="http://forums.bukkit.org/pages/about-us/">Bukkit</a> and <a href="http://en.wikipedia.org/wiki/Android_(operating_system)">Android</a>) and <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> (experience with <a href="http://en.wikipedia.org/wiki/Django_(web_framework)">Django</a> and <a href="http://praw.readthedocs.org/">PRAW (Reddit API Wrapper)</a>.
+					</li>
+					<li>Skills with various <abbr title="Integrated development environment">IDEs</abbr> including <a href="http://en.wikipedia.org/wiki/Eclipse_(software)">Eclipse</a> and <a href="http://en.wikipedia.org/wiki/Geany">Geany</a>.
+					<li>Skills with the project version control system, <a href="http://en.wikipedia.org/wiki/Git_(software)">Git</a>.
+					<li>Image creation and manipulation skill with <a href="http://en.wikipedia.org/wiki/Adobe_Photoshop">Adobe Photoshop</a>, <a href="http://en.wikipedia.org/wiki/Inkscape">Inkscape</a> and <a href="http://en.wikipedia.org/wiki/GIMP">GIMP</a>.
+					</li>
+					<li>Large amount of experience with the <a href="http://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> Enviroment and moderate experience with <a href="http://en.wikipedia.org/wiki/Linux">Linux</a>.
+					</li>
+					<li>Knowledge and understanding of computer hardware.</li>
+				</ul>
+			</section>
+			<section id="portfolio">
+				<dl>
+					<dt>
+						Juicer (<a href="https://play.google.com/store/apps/details?id=me.jakelane.juicer">Google Play</a> | <a href="https://bitbucket.org/JakeLane/juicer/src">Source</a>)
+					</dt>
+					<img src="static/juicer.png" class="left" />
+					<dd>An app I developed to enhance my skills with Java and begin learning Java. It is an app that drains an android device's battery (which can calibrate the battery).</dd>
+				</dl>
+				<br />
+				<dl>
+					<dt>
+						Reddit LaTeX Bot (<a href="https://bitbucket.org/JakeLane/reddit-latex-bot/wiki/Home">Homepage</a> | <a href="https://bitbucket.org/JakeLane/reddit-latex-bot/src">Source</a> | <a href="http://www.reddit.com/user/LaTexBot">Reddit Account</a>)
+					</dt>
+					<img src="static/latex.png" class="left" />
+					<dd>A Reddit bot written in Python using the PRAW python libary that parses comments containing LaTeX code and replies with an imgur link containing the rendered LaTeX.</dd>
+				</dl>
+				<br />
+				<dl>
+					<dt>
+						RapidTools (<a href="https://bitbucket.org/JakeLane/rapidtools/src">Source</a>)
+					</dt>
+					<img src="static/rapidtools.png" class="left" />
+					<dd>A Bukkit plugin that I developed for use on the Rapid Minecraft server. It served many functions that reduced the amount of plugins required by the server.</dd>
+				</dl>
+			</section>
+			<section id="contact">
+				<p><a href="https://twitter.com/JakeWLane">Twitter</a> <a href="mailto:me@jakelane.me">me@jakelane.me</a> <a href="http://steamcommunity.com/id/LeManyman">Steam</a>
+				<form action="http://getsimpleform.com/messages?form_api_token=c378aa41d2403d10da0b42ef5ca0b3d7" method="post">
+					<p>
+						<input type="hidden" name="redirect_to" value="http://jakelane.me/?contact=success" />
+					</p>
+					<p>
+						<input type="text" id="name" name="Name" placeholder="Your name" required>
+					</p>
+					<p>
+						<input type="email" id="email" name="Email" placeholder="Your email" required>
+					</p>
+					<p>
+						<input type="text" id="subject" name="Subject" placeholder="Subject">
+					</p>
+					<p>
+						<textarea id="message" name="Message" placeholder="Message" rows="6" required></textarea>
+					<p>
+					<p>
+						<input type='submit' value='Submit' class="button form" />
+					</p>
+				</form>
+			</section>
+		</article>
 		</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<span class="copyright">&copy; Jake Lane</span>
+		</footer>
 	</div>
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="static/main.js"></script>
+	<script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.6/seedrandom.min.js></script>
+	<script type="text/javascript" src="http://l2.io/ip.js?var=usersIp"></script>
+	<script src="static/julia.js" onload="DrawMandelbrot();"></script>
 </body>
 </html>
