@@ -1,5 +1,5 @@
-$(document).ready(function() {	
-	/* Tabs */
+$(document).ready(function() {
+	// Tabs
 	$(".tabs-menu a").click(function(event) {
 		event.preventDefault();
 		$(this).parent().addClass("current");
@@ -8,7 +8,11 @@ $(document).ready(function() {
 		$("section").not(tab).css("display", "none");
 		$(tab).fadeIn();
 	});
-
+	
+	// Jump to tab from hash
+	$('a[href="' + window.location.hash + '"]').trigger('click');
+	
+	// Load animation
 	$("header > h1").animate({
 		"opacity" : "1"
 	}, 500, function() {

@@ -15,7 +15,7 @@ body {
 }
 
 #main {
-	Padding-bottom: 2em;
+	padding-bottom: 3em;
 	overflow: auto;
 }
 
@@ -225,7 +225,7 @@ textarea:focus,input:focus {
 	width: 81.5%;
 }
 
-canvas {
+#juliaset {
 	float: left;
 	padding-left: 0;
 	padding-right: 0;
@@ -237,5 +237,12 @@ canvas {
 
 img.left {
 	float: left;
+	padding: 5px;
 	padding-right: 10px;
+}
+
+img.right {
+	float: right;
+	padding: 5px;
+	padding-left: 10px;
 }
