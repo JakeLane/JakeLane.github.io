@@ -16,7 +16,6 @@ body {
 
 #main {
 	padding-bottom: 3em;
-	overflow: auto;
 }
 
 /* header */
@@ -173,10 +172,8 @@ dd.thumbnail {
 	display: inline;
 	margin: 0;
 	float: left;
-}
-
-dd.thumbnail img {
-	padding: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 abbr {
@@ -207,6 +204,7 @@ input,textarea {
 	line-height: 1.75em;
 	width: 80%;
 	padding: 5px;
+	transition: all 0.25s ease-in;
 }
 
 textarea:focus,input:focus {
@@ -237,6 +235,47 @@ textarea:focus,input:focus {
 
 .button.form {
 	width: 81.5%;
+}
+
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	outline: none !important;
+	float: right;
+	font-size: 25pt;
+	font-weight: 700;
+	line-height: 1;
+	color: #6a707c;
+	margin-right: 5px;
+	transition: all 0.3s ease-in;
+}
+
+button.close:hover {
+	text-shadow: 0 0 10px #6a707c !important;
+}
+
+.alert {
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+.error {
+	background-color: #ffecec;
+	border: 1px solid #f5aca6;
+}
+
+.success {
+	background-color: #e9ffd9;
+	border: 1px solid #a6ca8a;
+}
+
+.warning {
+	background-color: #fff8c4;
+	border: 1px solid #f2c779;
 }
 
 #juliaset {
