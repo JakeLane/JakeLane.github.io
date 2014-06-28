@@ -59,8 +59,6 @@ function DrawMandelbrot() {
 		ctx.putImageData(imgData, 0, 0);
 		var imageDataURL = canvas.toDataURL();
 		changeFavicon(imageDataURL);
-		// document.body.style.background = "transparent url('" + imageDataURL +
-		// "') repeat";
 	}
 }
 
@@ -70,8 +68,7 @@ try {
 
 	var realFix = ((randomStreamReal() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
 	var imagFix = ((randomStreamImaginary() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
-}
-catch(error) {
+} catch (error) {
 	var realFix = -0.65175;
 	var imagFix = 0.41850;
 }
