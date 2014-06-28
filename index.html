@@ -139,8 +139,18 @@
 	<![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.6/seedrandom.min.js></script>
+	<script>
+		if (!window.jQuery) {
+			document.write('<script src="static/jquery.min.js"><\/script>');
+			console.log("Warning: jquery.min.js was not loaded from CDN, manually loaded.");
+		}
+		if (typeof(Math.seedrandom) != "function") {
+			document.write('<script src="static/seedrandom.min.js">\x3C/script>');
+			console.log("Warning: SeedRandom.min.js was not loaded from CDN, manually loaded.");
+		}
+	</script>
 	<script type="text/javascript" src="http://l2.io/ip.js?var=usersIp"></script>
 	<script src="static/main.js"></script>
-	<script src="static/julia.js" onload="DrawMandelbrot();"></script>
+	<script src="static/julia.js"></script>
 </body>
 </html>

@@ -95,6 +95,8 @@ function IsJuliaMenge(real, imag) {
 
 document.head = document.head || document.getElementsByTagName('head')[0];
 
+DrawMandelbrot(); // Run code
+
 function changeFavicon(src) {
 	var link = document.createElement('link'), oldLink = document.getElementById('dynamic-favicon');
 	link.id = 'dynamic-favicon';
