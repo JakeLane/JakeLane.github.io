@@ -11,7 +11,6 @@
 </noscript>
 </head>
 <body>
-	<!-- Header -->
 	<header>
 		<h1>Jake Lane</h1>
 		<nav>
@@ -23,114 +22,111 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="main">
-		<article>
-			<section id="home">
+	<article>
+		<section id="home">
+			<p>
+				<canvas id="juliaset" width="250" height="250"></canvas>
+			</p>
+			<p>My name is Jake Lane, I'm a high school student and have been hooked on computers since I could swing a keyboard.</p>
+		</section>
+		<section id="about">
+			<p>I am currently studying in preparation for a degree in software engineering. In my spare time, I work on my computer skills.</p>
+			<p>I have various skills in computing such as:</p>
+			<ul>
+				<li>Various web development skills including <a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>, <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, <a href="http://en.wikipedia.org/wiki/XML">XML</a>, <a href="http://en.wikipedia.org/wiki/JSON">JSON</a>, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3">CSS3</a>, <a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> and <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.
+				</li>
+				<li>Various programming skills including <a href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> (experience with <a href="http://forums.bukkit.org/pages/about-us/">Bukkit</a> and <a href="http://en.wikipedia.org/wiki/Android_(operating_system)">Android</a>), <a href="http://en.wikipedia.org/wiki/BASIC">BASIC</a>, <a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a> and <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> (experience with <a href="http://en.wikipedia.org/wiki/Django_(web_framework)">Django</a> and <a href="http://praw.readthedocs.org/">PRAW</a>).
+				</li>
+				<li>Skills with various <abbr title="Integrated development environment">IDEs</abbr> including <a href="http://en.wikipedia.org/wiki/Eclipse_(software)">Eclipse</a> and <a href="http://en.wikipedia.org/wiki/Geany">Geany</a>.
+				<li>Skills with the project version control system, <a href="http://en.wikipedia.org/wiki/Git_(software)">Git</a>.
+				<li>Image creation and manipulation skill with <a href="http://en.wikipedia.org/wiki/Adobe_Photoshop">Adobe Photoshop</a>, <a href="http://en.wikipedia.org/wiki/Inkscape">Inkscape</a> and <a href="http://en.wikipedia.org/wiki/GIMP">GIMP</a>.
+				</li>
+				<li>Large amount of experience with the <a href="http://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> Enviroment and moderate experience with <a href="http://en.wikipedia.org/wiki/Linux">Linux</a>.
+				</li>
+				<li>Knowledge and understanding of computer hardware.</li>
+			</ul>
+		</section>
+		<section id="portfolio">
+			<h2>Java</h2>
+			<dl>
+				<dt>
+					Juicer (<a href="https://play.google.com/store/apps/details?id=me.jakelane.juicer">Google Play</a> | <a href="https://bitbucket.org/JakeLane/juicer/src">Source</a>)
+				</dt>
+				<dd class="thumbnail">
+					<img src="static/juicer.png" alt="Juicer's Logo" />
+				</dd>
+				<dd>An app I developed to enhance my skills with Java and begin learning Java. It is an app that drains an android device's battery (which can calibrate the battery).</dd>
+			</dl>
+			<dl>
+				<dt>
+					RapidTools (<a href="https://bitbucket.org/JakeLane/rapidtools/src">Source</a>)
+				</dt>
+				<dd class="thumbnail">
+					<img src="static/rapidtools.png" alt="The Bukkit logo" />
+				</dd>
+				<dd>A Bukkit plugin that I developed for use on the Rapid Minecraft server. It served many functions that reduced the amount of plugins required by the server. It also interfaced with the website that I also designed mentioned below.</dd>
+			</dl>
+			<h2>Web Development</h2>
+			<dl>
+				<dt>
+					Jakelane.me (<a href="https://bitbucket.org/JakeLane/jakelane.bitbucket.org">Source</a>)
+				</dt>
+				<dd class="thumbnail">
+					<img src="static/jakelane.png" alt="An example Julia set that is generated for this website" />
+				</dd>
+				<dd>This website is built with HTML5, CSS3 and JavaScript. I take use of jQuery to handle the tabs and basic JavaScript to handle the generation of the Julia set. The Julia set is generated from the viewers IP using it as a seed for the generation of the iteration points. If the user does not have JavaScript enabled, there are CSS rules that take effect making the site usable. This website is entirely static and relies on no server-side code.</dd>
+			</dl>
+			<dl>
+				<dt>
+					RapidWeb (<a href="http://rapidcraftmc.com/">Site</a>)
+				</dt>
+				<dd class="thumbnail">
+					<img src="static/rapidweb.png" alt="The pseudo logo used for the project" />
+				</dd>
+				<dd>RapidWeb is a PHP website that I designed for the RapidCraft Minecraft server. It was built in PHP and the first large-scale programming project I ever undertook.</dd>
+			</dl>
+			<h2>Python</h2>
+			<dl>
+				<dt>
+					Reddit LaTeX Bot (<a href="https://bitbucket.org/JakeLane/reddit-latex-bot">Homepage</a> | <a href="https://bitbucket.org/JakeLane/reddit-latex-bot/src">Source</a> | <a href="http://www.reddit.com/user/LaTexBot">Reddit Account</a>)
+				</dt>
+				<dd class="thumbnail">
+					<img src="static/latex.png" alt="Example LaTeX similar to what is generated by this script." />
+				</dd>
+				<dd>A Reddit bot written in Python using the PRAW Python library that parses comments containing LaTeX code and replies with an imgur link containing the rendered LaTeX.</dd>
+			</dl>
+		</section>
+		<section id="contact">
+			<div class="alert success" id="contact-success" style="display: none;">
+				<button type="button" class="close">×</button>
+				Your message has been successfully sent.
+			</div>
+			<p>
+				Feel free to contact me. My prefered type of contact is email at the form below or <a href="mailto:me@jakelane.me">me@jakelane.me</a> but feel free to <a href="http://steamcommunity.com/id/LeManyman">add me on Steam</a> or <a href="https://twitter.com/JakeWLane">contact me on Twitter</a>.
+			</p>
+			<form action="http://getsimpleform.com/messages?form_api_token=c378aa41d2403d10da0b42ef5ca0b3d7" method="post">
 				<p>
-					<canvas id="juliaset" width="250" height="250"></canvas>
+					<input type="hidden" name="redirect_to" value="http://jakelane.me/?contact=success#contact" />
 				</p>
-				<p>My name is Jake Lane, I'm a high school student and have been hooked on computers since I could swing a keyboard.</p>
-			</section>
-			<section id="about">
-				<p>I am currently studying in preparation for a degree in software engineering. In my spare time, I work on my computer skills.</p>
-				<p>I have various skills in computing such as:</p>
-				<ul>
-					<li>Various web development skills including <a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>, <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, <a href="http://en.wikipedia.org/wiki/XML">XML</a>, <a href="http://en.wikipedia.org/wiki/JSON">JSON</a>, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3">CSS3</a>, <a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> and <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.
-					</li>
-					<li>Various programming skills including <a href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> (experience with <a href="http://forums.bukkit.org/pages/about-us/">Bukkit</a> and <a href="http://en.wikipedia.org/wiki/Android_(operating_system)">Android</a>), <a href="http://en.wikipedia.org/wiki/BASIC">BASIC</a>, <a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a> and <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> (experience with <a href="http://en.wikipedia.org/wiki/Django_(web_framework)">Django</a> and <a href="http://praw.readthedocs.org/">PRAW</a>).
-					</li>
-					<li>Skills with various <abbr title="Integrated development environment">IDEs</abbr> including <a href="http://en.wikipedia.org/wiki/Eclipse_(software)">Eclipse</a> and <a href="http://en.wikipedia.org/wiki/Geany">Geany</a>.
-					<li>Skills with the project version control system, <a href="http://en.wikipedia.org/wiki/Git_(software)">Git</a>.
-					<li>Image creation and manipulation skill with <a href="http://en.wikipedia.org/wiki/Adobe_Photoshop">Adobe Photoshop</a>, <a href="http://en.wikipedia.org/wiki/Inkscape">Inkscape</a> and <a href="http://en.wikipedia.org/wiki/GIMP">GIMP</a>.
-					</li>
-					<li>Large amount of experience with the <a href="http://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a> Enviroment and moderate experience with <a href="http://en.wikipedia.org/wiki/Linux">Linux</a>.
-					</li>
-					<li>Knowledge and understanding of computer hardware.</li>
-				</ul>
-			</section>
-			<section id="portfolio">
-				<h2>Java</h2>
-				<dl>
-					<dt>
-						Juicer (<a href="https://play.google.com/store/apps/details?id=me.jakelane.juicer">Google Play</a> | <a href="https://bitbucket.org/JakeLane/juicer/src">Source</a>)
-					</dt>
-					<dd class="thumbnail">
-						<img src="static/juicer.png" alt="Juicer's Logo" />
-					</dd>
-					<dd>An app I developed to enhance my skills with Java and begin learning Java. It is an app that drains an android device's battery (which can calibrate the battery).</dd>
-				</dl>
-				<dl>
-					<dt>
-						RapidTools (<a href="https://bitbucket.org/JakeLane/rapidtools/src">Source</a>)
-					</dt>
-					<dd class="thumbnail">
-						<img src="static/rapidtools.png" alt="The Bukkit logo" />
-					</dd>
-					<dd>A Bukkit plugin that I developed for use on the Rapid Minecraft server. It served many functions that reduced the amount of plugins required by the server. It also interfaced with the website that I also designed mentioned below.</dd>
-				</dl>
-				<h2>Web Development</h2>
-				<dl>
-					<dt>
-						Jakelane.me (<a href="https://bitbucket.org/JakeLane/jakelane.bitbucket.org">Source</a>)
-					</dt>
-					<dd class="thumbnail">
-						<img src="static/jakelane.png" alt="An example Julia set that is generated for this website" />
-					</dd>
-					<dd>This website is built with HTML5, CSS3 and JavaScript. I take use of jQuery to handle the tabs and basic JavaScript to handle the generation of the Julia set. The Julia set is generated from the viewers IP using it as a seed for the generation of the iteration points. If the user does not have JavaScript enabled, there are CSS rules that take effect making the site usable. This website is entirely static and relies on no server-side code.</dd>
-				</dl>
-				<dl>
-					<dt>
-						RapidWeb (<a href="http://rapidcraftmc.com/">Site</a>)
-					</dt>
-					<dd class="thumbnail">
-						<img src="static/rapidweb.png" alt="The pseudo logo used for the project" />
-					</dd>
-					<dd>RapidWeb is a PHP website that I designed for the RapidCraft Minecraft server. It was built in PHP and the first large-scale programming project I ever undertook.</dd>
-				</dl>
-				<h2>Python</h2>
-				<dl>
-					<dt>
-						Reddit LaTeX Bot (<a href="https://bitbucket.org/JakeLane/reddit-latex-bot">Homepage</a> | <a href="https://bitbucket.org/JakeLane/reddit-latex-bot/src">Source</a> | <a href="http://www.reddit.com/user/LaTexBot">Reddit Account</a>)
-					</dt>
-					<dd class="thumbnail">
-						<img src="static/latex.png" alt="Example LaTeX similar to what is generated by this script." />
-					</dd>
-					<dd>A Reddit bot written in Python using the PRAW Python library that parses comments containing LaTeX code and replies with an imgur link containing the rendered LaTeX.</dd>
-				</dl>
-			</section>
-			<section id="contact">
-				<div class="alert success" id="contact-success" style="display: none;">
-					<button type="button" class="close">×</button>
-					Your message has been successfully sent.
-				</div>
 				<p>
-					Feel free to contact me. My prefered type of contact is email at the form below or <a href="mailto:me@jakelane.me">me@jakelane.me</a> but feel free to <a href="http://steamcommunity.com/id/LeManyman">add me on Steam</a> or <a href="https://twitter.com/JakeWLane">contact me on Twitter</a>.
+					<input type="text" id="name" name="Name" placeholder="Your name" required>
 				</p>
-				<form action="http://getsimpleform.com/messages?form_api_token=c378aa41d2403d10da0b42ef5ca0b3d7" method="post">
-					<p>
-						<input type="hidden" name="redirect_to" value="http://jakelane.me/?contact=success#contact" />
-					</p>
-					<p>
-						<input type="text" id="name" name="Name" placeholder="Your name" required>
-					</p>
-					<p>
-						<input type="email" id="email" name="Email" placeholder="Your email" required>
-					</p>
-					<p>
-						<input type="text" id="subject" name="Subject" placeholder="Subject">
-					</p>
-					<p>
-						<textarea id="message" name="Message" placeholder="Message" rows="6" required></textarea>
-					</p>
-					<p>
-						<input type='submit' value='Submit' class="button form" />
-					</p>
-				</form>
-			</section>
-		</article>
-	</div>
-	<!-- Footer -->
-	<footer id="footer">
+				<p>
+					<input type="email" id="email" name="Email" placeholder="Your email" required>
+				</p>
+				<p>
+					<input type="text" id="subject" name="Subject" placeholder="Subject">
+				</p>
+				<p>
+					<textarea id="message" name="Message" placeholder="Message" rows="6" required></textarea>
+				</p>
+				<p>
+					<input type='submit' value='Submit' class="button form" />
+				</p>
+			</form>
+		</section>
+	</article>
+	<footer>
 		<span class="copyright">&copy; Jake Lane</span> <a class="social" href="https://twitter.com/JakeWLane"><i class="fa fa-twitter"></i> Twitter</a> <a class="social" href="http://steamcommunity.com/id/LeManyman"><i class="fa fa-steam"></i> Steam</a> <a class="social" href="mailto:me@jakelane.me"><i class="fa fa-envelope"></i> Email</a> <a class="social" href="https://bitbucket.org/JakeLane/"><i class="fa fa-bitbucket"></i> Bitbucket</a>
 	</footer>
 
@@ -144,7 +140,7 @@
 			document.write('<script src="static/jquery.min.js"><\/script>');
 			console.log("Warning: jquery.min.js was not loaded from CDN, manually loaded.");
 		}
-		if (typeof(Math.seedrandom) != "function") {
+		if (typeof (Math.seedrandom) != "function") {
 			document.write('<script src="static/seedrandom.min.js">\x3C/script>');
 			console.log("Warning: SeedRandom.min.js was not loaded from CDN, manually loaded.");
 		}
