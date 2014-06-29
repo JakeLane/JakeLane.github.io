@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).bind("load", function() {
 	// Tabs
 	$(".tabs-menu a").click(function(event) {
 		event.preventDefault();
