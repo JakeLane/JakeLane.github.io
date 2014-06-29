@@ -7,6 +7,20 @@ var canvas = document.getElementById("juliaset");
 // Reset zoom to default
 Reset();
 
+// Generate iteration points
+try {
+	var randomStreamReal = new Math.seedrandom(usersIp);
+	var randomStreamImaginary = new Math.seedrandom(usersIp.split("").reverse().join(""));
+
+	var realFix = ((randomStreamReal() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
+	var imagFix = ((randomStreamImaginary() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
+} catch (error) {
+	var realFix = -0.65175;
+	var imagFix = 0.41850;
+}
+
+DrawMandelbrot(); // Run code
+
 function Reset() {
 	// default position and size
 	zoomX = 0.0;
@@ -62,17 +76,6 @@ function DrawMandelbrot() {
 	}
 }
 
-try {
-	var randomStreamReal = new Math.seedrandom(usersIp);
-	var randomStreamImaginary = new Math.seedrandom(usersIp.split("").reverse().join(""));
-
-	var realFix = ((randomStreamReal() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
-	var imagFix = ((randomStreamImaginary() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
-} catch (error) {
-	var realFix = -0.65175;
-	var imagFix = 0.41850;
-}
-
 function IsJuliaMenge(real, imag) {
 	var temp = 0.0;
 	var realNew = real;
@@ -93,15 +96,12 @@ function IsJuliaMenge(real, imag) {
 	return -1;
 }
 
-document.head = document.head || document.getElementsByTagName('head')[0];
-
-DrawMandelbrot(); // Run code
-
 function changeFavicon(src) {
-	var link = document.createElement('link'), oldLink = document.getElementById('dynamic-favicon');
-	link.id = 'dynamic-favicon';
-	link.rel = 'shortcut icon';
+	var link = document.createElement("link"), oldLink = document.getElementById("dynamic-favicon");
+	link.id = "dynamic-favicon";
+	link.rel = "shortcut icon";
 	link.href = src;
+	document.head = document.head || document.getElementsByTagName("head")[0];
 	if (oldLink) {
 		document.head.removeChild(oldLink);
 	}

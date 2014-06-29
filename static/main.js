@@ -11,11 +11,11 @@ $(window).bind("load", function() {
 
 	// Close parent element on close button click
 	$(".close").click(function() {
-		$(this).parent('div').fadeOut();
+		$(this).parent("div").fadeOut();
 	});
 
 	// Jump to tab from hash
-	$('a[href="' + window.location.hash + '"]').trigger('click');
+	$("a[href='" + window.location.hash + "']").trigger("click");
 
 	// Display alert
 	var pieces = location.href.split("?");
