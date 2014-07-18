@@ -1,5 +1,8 @@
 // global variables
-var zoomX, zoomY, zoomFactor, zoomTop, zoomLeft, mouseDownX, moueDownY;
+var zoomX, zoomY, zoomFactor, zoomTop, zoomLeft, mouseDownX, moueDownY, daIP;
+$.ajaxSetup({
+	async : false
+});
 
 // get canvas element
 var canvas = document.getElementById("juliaset");
@@ -7,14 +10,18 @@ var canvas = document.getElementById("juliaset");
 // Reset zoom to default
 Reset();
 
+$.get('http://jsonip.com', function(res) {
+	daIP = res.ip;
+});
+
 // Generate iteration points
 try {
-	var randomStreamReal = new Math.seedrandom(usersIp);
-	var randomStreamImaginary = new Math.seedrandom(usersIp.split("").reverse().join(""));
-
+	var randomStreamReal = new Math.seedrandom(daIP);
+	var randomStreamImaginary = new Math.seedrandom(daIP.split("").reverse().join(""));
 	var realFix = ((randomStreamReal() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
 	var imagFix = ((randomStreamImaginary() * (0.99999 + 0.99999) - 0.99999).toFixed(5)) * (-1 + Math.round(randomStreamImaginary()) * 2);
 } catch (error) {
+	console.log("Error occured generating fixed interation positions: " + error)
 	var realFix = -0.65175;
 	var imagFix = 0.41850;
 }

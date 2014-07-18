@@ -6,6 +6,7 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Exo+2:400,800,700,500,300" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="static/style.css" />
+<meta name=viewport content="width=device-width, initial-scale=1">
 <noscript>
 	<link rel="stylesheet" type="text/css" href="static/style-noscript.css" />
 </noscript>
@@ -129,7 +130,6 @@
 	<footer>
 		<span class="copyright">&copy; Jake Lane</span> <a class="social" href="https://twitter.com/JakeWLane"><i class="fa fa-twitter"></i> Twitter</a> <a class="social" href="http://steamcommunity.com/id/LeManyman"><i class="fa fa-steam"></i> Steam</a> <a class="social" href="mailto:me@jakelane.me"><i class="fa fa-envelope"></i> Email</a> <a class="social" href="https://bitbucket.org/JakeLane/"><i class="fa fa-bitbucket"></i> Bitbucket</a>
 	</footer>
-
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -137,7 +137,7 @@
 	<script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.6/seedrandom.min.js></script>
 	<script>
 		if (!window.jQuery) {
-			document.write("<script src='static/jquery.min.js'><\/script>");
+			document.write("<script src='static/jquery.min.js'>\x3C/script>");
 			console.log("Warning: jquery.min.js was not loaded from CDN, manually loaded.")
 		}
 		if (typeof (Math.seedrandom) != "function") {
@@ -145,7 +145,7 @@
 			console.log("Warning: SeedRandom.min.js was not loaded from CDN, manually loaded.")
 		}
 	</script>
-	<script type="text/javascript" src="http://l2.io/ip.js?var=usersIp"></script>
+	
 	<script src="static/main.js"></script>
 	<script src="static/julia.js"></script>
 	<script>
