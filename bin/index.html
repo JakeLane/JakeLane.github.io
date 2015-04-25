@@ -53,30 +53,62 @@
 							<p>Below is a small sample of work I've contributed to over the years.</p>
 						</section>
 						<section>
-							<h3>Juicer <small>Android application (Java)</small></h3>
-							<img src="img/juicer.png" class="fancy-image">
-							<p>An app I developed to enhance my skills with Java and begin learning Java. It is an app that drains an android devices battery (which can calibrate the battery).</p>
-							<ul class="sub-links">
-								<li><a href="https://play.google.com/store/apps/details?id=me.jakelane.juicer"><i class="fa fa-android fa-fw"></i> View on Google Play</a></li>
-								<li><a href="https://bitbucket.org/JakeLane/juicer/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
-							</ul>
+							<div class="media">
+								<div class="media-body">
+									<h3 class="media-heading">Juicer <small>Android application (Java)</small></h3>
+									<p>An app I developed to enhance my skills with Java and begin learning Java. It is an app that drains an android devices battery (which can calibrate the battery).</p>
+									<ul class="sub-links">
+										<li><a href="https://play.google.com/store/apps/details?id=me.jakelane.juicer"><i class="fa fa-android fa-fw"></i> View on Google Play</a></li>
+										<li><a href="https://bitbucket.org/JakeLane/juicer/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
+									</ul>
+								</div>
+								<div class="media-right">
+									<img src="img/juicer.png" class="media-object">
+								</div>
+							</div>
 						</section>
 						<section>
-							<h3>LaTeX Bot <small>Reddit bot (Python)</small></h3>
-							<img src="img/latex.png" class="fancy-image">
-							<p>This is a Reddit bot written in Python using the PRAW Python library that parses comments containing LaTeX code and replies with an imgur link containing the rendered LaTeX.</p>
-							<ul class="sub-links">
-								<li><a href="http://www.reddit.com/user/TexBot"><i class="fa fa-reddit fa-fw"></i> View account on Reddit</a></li>
-								<li><a href="https://bitbucket.org/JakeLane/reddit-latex-bot/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
-							</ul>
+							<div class="media">
+								<div class="media-body">
+									<h3 class="media-heading">LaTeX Bot <small>Reddit bot (Python)</small></h3>
+									<p>This is a Reddit bot written in Python using the PRAW Python library that parses comments containing LaTeX code and replies with an imgur link containing the rendered LaTeX.</p>
+									<ul class="sub-links">
+										<li><a href="http://www.reddit.com/user/TexBot"><i class="fa fa-reddit fa-fw"></i> View account on Reddit</a></li>
+										<li><a href="https://bitbucket.org/JakeLane/reddit-latex-bot/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
+									</ul>
+								</div>
+								<div class="media-right">
+									<img src="img/latex.png" class="media-object">
+								</div>
+							</div>
 						</section>
 						<section>
-							<h3>RapidTools <small>Bukkit plugin (Java)</small></h3>
-							<img src="img/rapidtools.png" class="fancy-image">
-							<p>A Bukkit plugin that I developed for use on the Rapid Minecraft server. It served many functions that reduced the amount of plugins required by the server. It also interfaced with a website that I also built for the server.</p>
-							<ul class="sub-links">
-								<li><a href="https://bitbucket.org/JakeLane/rapidtools/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
-							</ul>
+							<div class="media">
+								<div class="media-body">
+									<h3 class="media-heading">RapidTools <small>Bukkit plugin (Java)</small></h3>
+									<p>A Bukkit plugin that I developed for use on the Rapid Minecraft server. It served many functions that reduced the amount of plugins required by the server. It also interfaced with a website that I also built for the server.</p>
+									<ul class="sub-links">
+										<li><a href="https://bitbucket.org/JakeLane/rapidtools/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
+									</ul>
+								</div>
+								<div class="media-right">
+									<img src="img/rapidtools.png" class="media-object">
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="media">
+								<div class="media-body">
+									<h3 class="media-heading">Jakelane.me <small>Static website (HTML, CSS, JavaScript)</small></h3>
+									<p>This website is static and is built with the Bootstrap CSS framework. It is hosted for free by <a href="https://surge.sh/">surge.sh</a>.</p>
+									<ul class="sub-links">
+										<li><a href="https://bitbucket.org/JakeLane/jakelane-site/src"><i class="fa fa-bitbucket fa-fw"></i> View source on Bitbucket</a></li>
+									</ul>
+								</div>
+								<div class="media-right">
+									<img src="img/jakelane.png" class="media-object">
+								</div>
+							</div>
 						</section>
 					</div>
 
@@ -84,8 +116,10 @@
 					<div id="contact" class="tab-pane">
 						<section>
 							<h2>Contact</h2>
+							<div class="alert alert-success" id="contact-success" role="alert" style="display: none;">Your message has been sent.</div>
 							<p>Feel free to contact me at <a href="mailto:me@jakelane.me">me@jakelane.me</a> or with the form below.</p>
 							<form action="http://getsimpleform.com/messages?form_api_token=c378aa41d2403d10da0b42ef5ca0b3d7" method="post">
+								<input type="hidden" name="redirect_to" value="http://jakelane.me/?contactsuccess#contact" />
 								<div class="form-group">
 									<label for="contactInputName">Name</label>
 									<input type="text" class="form-control" id="contactInputName">
@@ -132,8 +166,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

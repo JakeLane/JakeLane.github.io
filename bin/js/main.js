@@ -3,6 +3,7 @@ if (!window.jQuery) {
 	console.log("Warning: jquery.min.js was not loaded from CDN, manually loaded.")
 }
 
+// Jump to tabs from url
 $(function(){
 	var hash = window.location.hash;
 	hash && $('ul.nav a[href="' + hash + '"]').tab('show');
@@ -14,3 +15,9 @@ $(function(){
 		$('html,body').scrollTop(scrollmem);
 	});
 });
+
+// Display alert
+var pieces = location.href.split("?");
+if (pieces[1] == "contactsuccess#contact") {
+	$("#contact-success").show();
+}

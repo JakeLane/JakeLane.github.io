@@ -6626,10 +6626,6 @@ section h5,
 section h6 {
   margin-top: -5px;
 }
-section .fancy-image {
-  float: right !important;
-  padding-left: 10px;
-}
 ul.sub-links {
   list-style: none;
   padding: 0;
