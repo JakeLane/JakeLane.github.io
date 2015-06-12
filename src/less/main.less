@@ -1,5 +1,13 @@
-html, body, .container-fluid, .container-fluid, .row {
+html, body, main {
 	height: 100%;
+}
+
+body {
+	.container-fluid;
+}
+
+main {
+	.make-row();
 }
 
 a:hover {
@@ -7,6 +15,9 @@ a:hover {
 }
 
 .content {
+	.make-md-column-offset(3);
+	.make-md-column(9);
+
 	height: 100%;
 	padding-left: 0;
 	padding-right: 0;
