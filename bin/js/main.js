@@ -1,8 +1,3 @@
-if (!window.jQuery) {
-	document.write("<script src='static/jquery.min.js'>\x3C/script>");
-	console.log("Warning: jquery.min.js was not loaded from CDN, manually loaded.")
-}
-
 // Jump to tabs from url
 $(function(){
 	var hash = window.location.hash;
