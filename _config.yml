@@ -1,0 +1,39 @@
+#
+# Configuration file
+#
+
+name: Jake Lane
+description: Undergraduate Software Engineer
+keywords: "jake lane, software, engineer, programmer, github"
+disqus: jakelane
+google_analytics: UA-36740143-1
+url: http://jakelane.me/
+markdown: redcarpet
+highlighter: pygments
+permalink: /blog/:title/
+
+# Navigation links
+navigation:
+- text: About Me
+  url: /
+- text: Blog
+  url: /blog/
+  layout: post
+- text: Projects
+  url: /projects/
+  layout: project
+- text: Contact
+  url: /contact/
+
+sass:
+  style: :compressed
+
+gems:
+  - jekyll-sitemap
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME

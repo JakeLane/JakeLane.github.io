@@ -1,0 +1,68 @@
+.sidebar {
+	@include make-md-column(3);
+	
+	a {
+		color: $sidebar-text-color;
+	}
+
+	h1 {
+		cursor: default;
+		color: $sidebar-text-color;
+		display: block;
+		margin: 15px;
+		font-size: 45px;
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 0 0 0;
+	}
+
+	background-color: $sidebar-bg;
+	background-image: url('/images/sidebar-background.png');
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	-webkit-animation: animatedBackground 40s linear infinite;
+	-moz-animation: animatedBackground 40s linear infinite;
+	-ms-animation: animatedBackground 40s linear infinite;
+	-o-animation: animatedBackground 40s linear infinite;
+	animation: animatedBackground 40s linear infinite;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	ul.nav li a {
+		background: none;
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-o-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+	}
+
+	ul.nav li.active a, ul.nav li a:hover {
+		background-color: $brand-primary;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.sidebar {
+		position: fixed;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 1000;
+		display: block;
+	}
+}
+
+@keyframes animatedBackground {
+	from {background-position: 0 0;}
+	to {background-position: -2560px 0;}
+}
+
+@-webkit-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -2560px 0; }
+}
