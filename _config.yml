@@ -18,18 +18,23 @@ navigation:
   url: /
 - text: Blog
   url: /blog/
-  layout: post
+  layout: page
 - text: Projects
   url: /projects/
   layout: project
 - text: Contact
   url: /contact/
 
+# Pagination
+paginate: 3
+paginate_path: "/blog/page:num"
+
 sass:
   style: :compressed
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 exclude:
     - Gemfile
