@@ -9,7 +9,7 @@ disqus: jakelane
 google_analytics: UA-36740143-1
 url: http://jakelane.me/
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /blog/:title/
 
 # Navigation links
