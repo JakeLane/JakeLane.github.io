@@ -8,7 +8,7 @@ keywords: "jake lane, software, engineer, programmer, github"
 disqus: jakelane
 google_analytics: UA-36740143-1
 url: http://jakelane.me/
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /blog/:title/
 
