@@ -1,0 +1,13 @@
+{
+	"extends": "tslint:latest",
+	"rules": {
+		"curly": true,
+		"indent": [true, "tabs"],
+		"quotemark": [true, "single", "jsx-double"],
+		"interface-name": false
+	},
+	"jsRules": {
+		"curly": true
+	},
+	"rulesDirectory": []
+}

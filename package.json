@@ -1,0 +1,37 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personal website for Jake Lane",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "tslint -c tslint.json src/index.tsx src/components/*.tsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeLane/JakeLane.github.io.git"
+  },
+  "author": "Jake Lane <me@jakelane.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JakeLane/JakeLane.github.io/issues"
+  },
+  "homepage": "https://github.com/JakeLane/JakeLane.github.io#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.54",
+    "@types/react": "^0.14.55",
+    "@types/react-dom": "^0.14.19",
+	"@types/react-hot-loader": "^3.0.0",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
