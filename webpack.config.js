@@ -1,25 +1,25 @@
-const webpack = require("webpack");
-const path = require("path");
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
 	entry: [
-		"react-hot-loader/patch",
-		"webpack-dev-server/client?http://localhost:3000",
-		"webpack/hot/only-dev-server",
-		"./src/index",
+		'react-hot-loader/patch',
+		'webpack-dev-server/client?http://localhost:3000',
+		'webpack/hot/only-dev-server',
+		'./src/index',
 	],
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: "bundle.js",
-		publicPath: "/static/",
+		filename: 'bundle.js',
+		publicPath: '/static/',
 	},
 
 	// Enable sourcemaps for debugging webpack's output.
-	devtool: "source-map",
+	devtool: 'source-map',
 
 	resolve: {
 		// Add '.ts' and '.tsx' as resolvable extensions.
-		extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+		extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js']
 	},
 
 	plugins: [
@@ -32,33 +32,26 @@ module.exports = {
 			{
 				test: /\.tsx?$/,
 				use: [
-					"react-hot-loader/webpack",
-					"awesome-typescript-loader"
+					'react-hot-loader/webpack',
+					'awesome-typescript-loader'
 				],
 				exclude: path.resolve(__dirname, 'node_modules'),
-				include: path.resolve(__dirname, "src"),
+				include: path.resolve(__dirname, 'src'),
 			},
 			{
 				test: /\.css$/,
 				use: [
-					"react-hot-loader/webpack",
+					'react-hot-loader/webpack',
 					'style-loader',
 					'css-loader?importLoaders=1',
-					{
-						loader: 'postcss-loader',
-						options: {
-							plugins: () => [
-								require('autoprefixer'),
-							],
-						},
-					},
+					'postcss-loader',
 				],
 			},
 			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
 			{
 				enforce: 'pre',
 				test: /\.js$/,
-				loader: "source-map-loader"
+				loader: 'source-map-loader'
 			},
 		],
 	},
@@ -71,6 +64,6 @@ module.exports = {
 	},
 
 	performance: {
-		hints: process.env.NODE_ENV === 'production' ? "warning" : false
+		hints: process.env.NODE_ENV === 'production' ? 'warning' : false
 	},
 };
