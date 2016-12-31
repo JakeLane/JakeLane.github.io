@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/JakeLane/JakeLane.github.io#readme",
   "dependencies": {
+    "json-loader": "^0.5.4",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-markdown": "^2.4.2",
     "react-router": "^3.0.0"
   },
   "devDependencies": {
@@ -32,6 +34,8 @@
     "autoprefixer": "^6.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
     "css-loader": "^0.26.1",
+    "html-loader": "^0.4.4",
+    "markdown-loader": "^0.1.7",
     "postcss-loader": "^1.2.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "source-map-loader": "^0.1.5",

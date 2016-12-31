@@ -47,6 +47,20 @@ module.exports = {
 					'postcss-loader',
 				],
 			},
+			{
+				test: /\.json$/,
+				use: [
+					'react-hot-loader/webpack',
+					'json-loader',
+				],
+			},
+			{
+				test: /\.md$/,
+				use: [
+					'html-loader',
+					'markdown-loader',
+				],
+			},
 			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
 			{
 				enforce: 'pre',

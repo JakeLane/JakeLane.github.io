@@ -4,7 +4,8 @@
 		"sourceMap": true,
 		"noImplicitAny": false,
 		"target": "es5",
-		"jsx": "react"
+		"jsx": "react",
+		"types": ["node"]
 	},
 	"compileOnSave": true,
 	"include": [

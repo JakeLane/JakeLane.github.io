@@ -7,6 +7,7 @@ function Navigation() {
 			<span>Jake Lane</span>
 			<ul>
 				<li><Link to="/">About</Link></li>
+				<li><Link to="/blog">Blog</Link></li>
 				<li><Link to="/projects">Projects</Link></li>
 				<li><Link to="/resume">Résumé</Link></li>
 			</ul>
