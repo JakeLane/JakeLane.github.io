@@ -37,6 +37,15 @@ module.exports = {
 				],
 				exclude: path.resolve(__dirname, 'node_modules'),
 				include: path.resolve(__dirname, "src"),
+			},
+			{
+				test: /\.css$/,
+				loaders: [
+					"react-hot-loader/webpack",
+					'style-loader',
+					'css-loader?importLoaders=1',
+					'postcss-loader'
+				]
 			}
 		],
 
@@ -48,6 +57,12 @@ module.exports = {
 				loader: "source-map-loader"
 			}
 		]
+	},
+
+	postcss(bundler) {
+		return [
+			require('autoprefixer'),
+		];
 	},
 
 	// When importing a module whose path matches one of the following, just
