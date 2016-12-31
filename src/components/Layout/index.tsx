@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Navigation from '../Navigation/Navigation';
+import Navigation from '../Navigation';
 import './styles.css';
 
 interface ILayoutProps extends React.Props<any> {

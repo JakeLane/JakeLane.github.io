@@ -19,7 +19,7 @@ module.exports = {
 
 	resolve: {
 		// Add '.ts' and '.tsx' as resolvable extensions.
-		extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js", ""]
+		extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
 	},
 
 	plugins: [
@@ -27,11 +27,11 @@ module.exports = {
 	],
 
 	module: {
-		loaders: [
+		rules: [
 			// All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
 			{
 				test: /\.tsx?$/,
-				loaders: [
+				use: [
 					"react-hot-loader/webpack",
 					"awesome-typescript-loader"
 				],
@@ -40,29 +40,27 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				loaders: [
+				use: [
 					"react-hot-loader/webpack",
 					'style-loader',
 					'css-loader?importLoaders=1',
-					'postcss-loader'
-				]
-			}
-		],
-
-		rules: [
+					{
+						loader: 'postcss-loader',
+						options: {
+							plugins: () => [
+								require('autoprefixer'),
+							],
+						},
+					},
+				],
+			},
 			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
 			{
 				enforce: 'pre',
 				test: /\.js$/,
 				loader: "source-map-loader"
-			}
-		]
-	},
-
-	postcss(bundler) {
-		return [
-			require('autoprefixer'),
-		];
+			},
+		],
 	},
 
 	// When importing a module whose path matches one of the following, just
@@ -70,5 +68,9 @@ module.exports = {
 	// This is important because it allows us to avoid bundling all of our
 	// dependencies, which allows browsers to cache those libraries between builds.
 	externals: {
+	},
+
+	performance: {
+		hints: process.env.NODE_ENV === 'production' ? "warning" : false
 	},
 };

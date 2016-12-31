@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Layout from './components/Layout/Layout';
+import Layout from './components/Layout';
 import './globalStyles.css';
 import routes from './routes';
 
@@ -21,5 +21,5 @@ render();
 // `hot` is dynamically defined
 declare var module: any;
 if (module.hot) {
-	module.hot.accept('./components/Layout/Layout', render);
+	module.hot.accept('./components/Layout', render);
 }
