@@ -1,7 +1,6 @@
 import * as React from 'react';
 const postsMeta = require('../../../posts/posts.json');
 
-const post = require('../../../posts/hi.md');
 declare var System: any;
 
 interface IPostProps {
@@ -27,15 +26,15 @@ class Post extends React.PureComponent<IPostProps, IPostState> {
 		const meta = postsMeta[this.props.params.id];
 		const content = this.getPost(meta.file);
 		return (
-			<div>
+			<main>
 				<h1>{ meta.title }</h1>
 				<div dangerouslySetInnerHTML={ { __html: this.state.content } } />
-			</div>
+			</main>
 		);
 	}
 
 	private getPost(file: string) {
-		System.import(`../../../posts/${file}`).then((md) =>
+		System.import(`../../../posts/${file}.md`).then((md) =>
 			this.setState({
 				content: md,
 			}),

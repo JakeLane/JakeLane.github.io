@@ -1,11 +1,14 @@
 import * as React from 'react';
 
-class Home extends React.Component<void, void> {
+class Resume extends React.Component<void, void> {
 	public render() {
 		return (
-			<p>Résumé</p>
+			<main>
+				<h1>Résumé</h1>
+				<p>Content</p>
+			</main>
 		);
 	}
 }
 
-export default Home;
+export default Resume;
