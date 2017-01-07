@@ -1,7 +1,14 @@
 {
-	"hi": {
-		"title": "Hi",
-		"dateCreated": 1483167762,
-		"file": "hi"
+	"toffeed": {
+		"title": "Toffeed - A Facebook mobile web wrapper",
+		"dateCreated": 1450747800,
+		"lead": "As a small project for my small summer break, I developed a wrapper app for Facebook. It simply encloses the Facebook’s mobile website in a WebView and uses JavaScript Interfaces to obtain data from the pages.",
+		"file": "toffeed"
+	},
+	"moved-to-jekyll": {
+		"title": "Moved to Jekyll!",
+		"dateCreated": 1447896600,
+		"lead": "I’ve converted my static site into a Jekyll generated one so I can have a blog.",
+		"file": "moved-to-jekyll"
 	}
 }
