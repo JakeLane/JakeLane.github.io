@@ -48,6 +48,16 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.scss$/,
+				use: [
+					'react-hot-loader/webpack',
+					'style-loader',
+					'css-loader?importLoaders=2',
+					'sass-loader',
+					'postcss-loader',
+				],
+			},
+			{
 				test: /\.json$/,
 				use: [
 					'react-hot-loader/webpack',
@@ -59,6 +69,18 @@ module.exports = {
 				use: [
 					'html-loader',
 					'markdown-loader',
+				],
+			},
+			{
+				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				use: [
+					'url-loader?limit=10000&mimetype=application/font-woff'
+				],
+			},
+			{
+				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				use: [
+					'file-loader'
 				],
 			},
 			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.

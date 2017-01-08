@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Navigation from '../Navigation';
-import './styles.css';
+import './styles.scss';
 
 interface ILayoutProps extends React.Props<any> {
 	children?: JSX.Element;

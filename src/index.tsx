@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import Layout from './components/Layout';
-import './globalStyles.css';
+import './globalStyles.scss';
 import routes from './routes';
 
 const root = document.getElementById('root');

@@ -1,15 +1,14 @@
 import * as React from 'react';
+import { Icon } from 'react-fa';
 import { Link } from 'react-router';
-import './styles.css';
+import './styles.scss';
 
 function Navigation() {
 	return (
-		<nav>
-			<span
-				className="brand"
-			>
+		<nav className="navigation">
+			<div className="brand">
 				Jake Lane
-			</span>
+			</div>
 			<ul>
 				<li><Link to="/">About</Link></li>
 				<li><Link to="/blog">Blog</Link></li>
@@ -19,7 +18,7 @@ function Navigation() {
 						href="https://cdn.rawgit.com/JakeLane/Resume/master/resume.pdf"
 						target="_blank"
 					>
-						Résumé
+						Résumé <Icon name="external-link" />
 					</a>
 				</li>
 			</ul>

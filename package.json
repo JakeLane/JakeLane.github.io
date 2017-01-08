@@ -5,7 +5,9 @@
   "main": "index.jsx",
   "scripts": {
     "start": "node server.js",
-    "lint": "tslint -c tslint.json src/index.tsx src/components/*.tsx",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "lint:js": "tslint -c tslint.json src/**/*.tsx",
+    "lint:sass": "sass-lint -c .sass-lint.yml src/**/*.scss  --verbose --no-exit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,7 @@
     "json-loader": "^0.5.4",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-fontawesome": "^1.5.0",
     "react-markdown": "^2.4.2",
     "react-router": "^3.0.0"
   },
@@ -34,13 +37,17 @@
     "autoprefixer": "^6.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
     "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
     "html-loader": "^0.4.4",
     "markdown-loader": "^0.1.7",
     "postcss-loader": "^1.2.1",
+    "react-fa": "^4.1.2",
     "react-hot-loader": "^3.0.0-beta.6",
+    "sass-loader": "^4.1.1",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
     "typescript": "^2.1.4",
+    "url-loader": "^0.5.7",
     "webpack": "^2.2.0-rc.3",
     "webpack-dev-server": "^2.2.0-rc.0"
   }

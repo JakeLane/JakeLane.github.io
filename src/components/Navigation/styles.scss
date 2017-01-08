@@ -1,0 +1,22 @@
+nav.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.brand {
+		font-size: 3em;
+		font-weight: 700;
+		display: inline-block;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+
+		li  {
+			display: inline-block;
+			margin: 5px;
+		}
+	}
+}

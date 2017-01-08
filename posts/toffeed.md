@@ -1,7 +1,7 @@
 As a small project for my small summer break, I developed a wrapper app for
-Facebook. It simply encloses the Facebook's mobile website in a 
-WebView](http://developer.android.com/reference/android/webkit/WebView.html) and
-uses
+Facebook. It simply encloses the Facebook's mobile website in a
+[WebView](http://developer.android.com/reference/android/webkit/WebView.html)
+and uses
 [JavaScript Interfaces](http://developer.android.com/guide/webapps/webview.html#UsingJavaScript)
 to obtain data from the pages. I tried quite hard to follow material design and
 relatively happy with how it turned out.
@@ -20,9 +20,9 @@ I used pure JavaScript to make changes to the actual site. WebView does not
 provide a neat way of executing this code, so unfortunately I had to load it
 inline like a bookmarklet. For example:
 
-{% highlight java %}
+```java
 webView.loadUrl("javascript:alert('Hello World!')");
-{% endhighlight %}
+```
 
 Aside from the severe impact on my mental health, this method worked quite well
 and is currently implemented in the app.
