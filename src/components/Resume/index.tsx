@@ -5,7 +5,14 @@ class Resume extends React.Component<void, void> {
 		return (
 			<main>
 				<h1>Résumé</h1>
-				<p>Content</p>
+				<p>
+					<a
+						href="https://cdn.rawgit.com/JakeLane/Resume/master/resume.pdf"
+						target="_blank"
+					>
+						Link
+					</a>
+				</p>
 			</main>
 		);
 	}

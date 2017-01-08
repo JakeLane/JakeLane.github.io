@@ -5,11 +5,16 @@ html {
 body {
     font-family: 'Raleway', Arial;
     color: #555;
-    font-size: 16px;
+    font-size: 1em;
 	margin: 0;
     line-height: 1.4;
 }
 
 a, a:visited {
     color: #2980b9;
+}
+
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: url(https://en.wikipedia.org/w/skins/Vector/images/external-link-ltr-icon.png);
+    margin: 0 0 0 1px;
 }
