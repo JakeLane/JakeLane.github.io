@@ -1,0 +1,75 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444;
+}
+
+a {
+	color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #0056b3;
+    text-decoration: underline;
+}
+
+.container {
+	margin-right: auto;
+    margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: 60rem;
+}
+
+header {
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 4rem;
+}
+
+nav ul {
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul a {
+	text-decoration: none;
+	display: block;
+	padding: 0.75rem;
+}
+
+main .media {
+	display: flex;
+	justify-content: space-between;
+}
+
+.media .media-right {
+	align-self: center;
+	padding: 15px;
+}
+
+main .sub-links {
+	list-style: none;
+	padding: 0;
+}
+
+footer ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
